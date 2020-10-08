@@ -1,0 +1,13 @@
+[application]
+id = "my-sample-server"
+repo = "https://github.com/nokusukun/sample-express"
+run = [
+    ["yarn", "start"]
+]
+
+[dns]
+zone = "noku.pw"
+domain = "sampleapp.noku.pw"
+
+[caddy]
+domains = ["sampleapp.noku.pw"]
