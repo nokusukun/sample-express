@@ -1,0 +1,13 @@
+{
+  "name": "sample_express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "dependencies": {
+    "bent": "^7.3.10",
+    "express": "^4.17.1"
+  }
+}
