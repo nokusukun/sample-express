@@ -2,6 +2,7 @@
 id = "my-sample-server"
 repo = "https://github.com/nokusukun/sample-express"
 run = [
+    ["yarn],
     ["yarn", "run", "run"]
 ]
 
