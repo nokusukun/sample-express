@@ -6,7 +6,7 @@ run = [
     ["yarn", "run", "run"]
 ]
 
-[dns
+[dns]
 zone = "noku.pw"
 domain = "sampleapp.noku.pw"
 
