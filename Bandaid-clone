@@ -1,0 +1,14 @@
+[application]
+id = "my-sample-server-cloned"
+repo = "https://github.com/nokusukun/sample-express"
+run = [
+    ["yarn"], 
+    ["yarn", "run", "run"]
+]
+
+[dns]
+zone = "noku.pw"
+domain = "sampleapp.noku.pw"
+
+[caddy]
+domains = ["sampleapp.noku.pw"]
