@@ -1,0 +1,38 @@
+[meta]
+    name = "my-application"
+
+[provision.frontend]
+    health_endpoint = "/"
+    event_url = "https://postb.in/1602269478542-1194403597619"
+    run = [
+        ["yarn"],
+        ["yarn", "run", "run"]
+    ]
+    envs = ["MESSAGE=FRONTEND"]
+    base_dir = ""
+
+[provision.backend]
+    health_endpoint = "/"
+    event_url = "https://postb.in/1602269478542-1194403597619"
+    run = [
+        ["yarn"],
+        ["yarn", "run", "run"]
+    ]
+    envs = ["MESSAGE=BACKEND"]
+    base_dir = ""
+
+[proxy.frontend]
+    host = ["www.example.com"]
+
+[proxy.backend]
+    host = ["api.example.com", "api.www.example.com"]
+
+[cloudflare.frontend]
+    host = ["www.example.com"]
+    zone = "example.com"
+    proxied = true
+
+[cloudflare.backend]
+    host = ["api.example.com", "api.www.example.com"]
+    zone = "example.com"
+    proxied = true
