@@ -5,7 +5,7 @@ const app = express()
 
 app.get('/', (req, res) => {
     console.log("This is a test")
-    res.send('Hello World!')
+    res.send('Hello World! ' + process.env.MESSAGE)
 })
 
 const _host = process.env.APP_HOST
