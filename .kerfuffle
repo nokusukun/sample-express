@@ -8,7 +8,6 @@
 
 [provision.frontend]
     run = [
-        ["yarn"],
         ["yarn", "run", "run"]
     ]
     envs = ["MESSAGE=FRONTEND"]
@@ -16,7 +15,6 @@
 
 [provision.backend]
     run = [
-        ["yarn"],
         ["yarn", "run", "run"]
     ]
     envs = ["MESSAGE=BACKEND"]
